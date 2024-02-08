@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SchoolManagement.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server" >
+    <link href="Master.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style {
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topPanel"><h1>School Data Management</h1>
+        </div>
+        <div class="leftPanel">
+            <asp:Image ID="Image1" runat="server" Width="178px" ImageUrl="~/Image/RS.jpg" style="margin-left: 7px; margin-top: 9px;" />
+        </div>  
+        <div class="centerPanel">
+            <asp:ContentPlaceHolder ID="ContentPlaceholder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="rightPanel">
+            <table class="auto-style1">
+                <tr>
+                   <td>
+                       <asp:HyperLink ID="Students" runat="server" NavigateUrl="~/Students.aspx" style="z-index:1; left:22px; top:36px; position: absolute">Students</asp:HyperLink>
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="Teachers" runat="server" NavigateUrl="~/Teachers.aspx" style="z-index:1; left:22px; top:59px; position: absolute">Teachers</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="Courses" runat="server" NavigateUrl="~/Courses.aspx" style="z-index:1; left:22px; top:83px; position: absolute">Courses</asp:HyperLink>
+                    <table class="auto-style">
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                   </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

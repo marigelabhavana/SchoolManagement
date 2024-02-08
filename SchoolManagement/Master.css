@@ -1,0 +1,51 @@
+﻿body {
+    background-color: gray;
+}
+
+h1, h2 {
+    top:1%;
+    text-align: center;
+    height:5%;
+}
+
+.topPanel {
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 5%;
+    width: 96%;
+    height: 13%;
+    background-color:lightslategray;
+    color: White;
+    bottom: 311px;
+}
+
+.leftPanel {
+    position: absolute;
+    left: 2%;
+    top: 24%;
+    width: 20%;
+    height: 85%;
+    background-color: lightgoldenrodyellow;
+    color: darkgreen;
+}
+
+.centerPanel {
+    position: absolute;
+    left: 24%;
+    top: 21%;
+    width: 50%;
+    height: 83%;
+    background-color: white;
+    color: darkblue;
+}
+
+.rightPanel {
+    position: absolute;
+    left: 76%;
+    top: 24%;
+    width: 22%;
+    height: 85%;
+    background-color: lightgoldenrodyellow;
+    color: darkblue;
+}
